@@ -179,8 +179,8 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><font size=3>Change Language</font></a>
                             <div class="dropdown-menu m-0">
-                                <a href="eye1.html" class="dropdown-item"><b>Swahili</b></a>
-                                <a href="eye.html" class="dropdown-item"><b>English</b></a>
+                                <a href="appointment1.html" class="dropdown-item"><b>Swahili</b></a>
+                                <a href="appointment.html" class="dropdown-item"><b>English</b></a>
                                
                             </div>
                         </div>
@@ -194,65 +194,108 @@
         <!-- Header Start -->
         <div class="container-fluid bg-breadcrumb">
             <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4"><font size=5>Eye Department</font></h1>
-                  
+                <h3 class="text-white display-3 mb-4"><font size=5>Doctor's Appointment</font></h1>
+                    
             </div>
         </div>
         <!-- Header End -->
 
-        <!-- Travel Guide Start -->
-        <div class="container-fluid guide py-5">
+        <!-- Tour Booking Start -->
+        <div class="container-fluid booking py-5">
             <div class="container py-5">
-                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                    <h5 class="section-title px-3">Meet Our Optometrists Unit</h5>
-                   
-                </div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="guide-item">
-                            <div class="guide-img">
-                                <div class="guide-img-efects">
-                                    <img src="img/profile.JPG" class="img-fluid w-100 rounded-top" alt="Image">
-                                </div>
-                                
-                            </div>
-                            <div class="guide-title text-center rounded-bottom p-4">
-                                <div class="guide-title-inner">
-                                    <h4 class="mt-3">Rosemary Kimaro</h4>
-                                    <hr>
-                                    <p class="mb-0"><b>Head of Eye Department</b></p>
-                                    <p class="mb-0"><i class="fas fa-phone me-2"></i> <b>( +255 ) 782 644 646</b></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="guide-item">
-                            <div class="guide-img">
-                                <div class="guide-img-efects">
-                                    <img src="img/profile.JPG" class="img-fluid w-100 rounded-top" alt="Image">
-                                </div>
-                                
-                            </div>
-                            <div class="guide-title text-center rounded-bottom p-4">
-                                <div class="guide-title-inner">
-                                    <h4 class="mt-3">Dr. Joan Msuya</h4>
-                                    <hr>
-                                    <p class="mb-0"><b>Optometrist</b></p>
-                                    <p class="mb-0"><i class="fas fa-phone me-2"></i> <b>( +255 ) 718 785 775</b></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row g-5 align-items-center">
                     
-                    
+                       
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="text-white mb-3">Doctor's Appointment</h1>
+                        <p class="text-white mb-4">Please Fill the Information to the Corresponding Doctor's Appointment
                              
+                           </p>
+                                                    
+                           <form action="http://192.168.10.100:7070/#">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-white border-0" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-white border-0" id="name" placeholder="Phone Number">
+                                        <label for="name">Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-white border-0" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="col-md-10">
+                                        <input
+                                          class="form-control"
+                                          type="datetime-local"
+                                          
+                                          id="html5-datetime-local-input"
+                                          required
+                                        />
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-white border-0" id="select1">
+                                                <option value="">Appointment Type</option>
+                                            <option value="1">General Appointment</option>
+                                            <option value="2">Diabetic Appointment</option>
+                                            <option value="3">Physio Appointment</option>
+                                            <option value="3">Cardiac Appointment</option>
+                                        </select>
+                                        <label for="select1">Appointment Type</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-white border-0" id="SelectPerson">
+                                            <option value="">Age Group</option>
+                                            <option value="1">Adult</option>
+                                            <option value="2">Child</option>
+                                            <option value="3">Youth</option>
+                                        </select>
+                                        <label for="SelectPerson">Age Group</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-white border-0" id="CategoriesSelect">
+                                            <option value="1">No. of People</option>
+                                            <option value="2">1</option>
+                                            <option value="3">More Than 5</option>
+                                            <option value="3">Less Than 5</option>
+                                        </select>
+                                        <label for="CategoriesSelect">Categories</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-white border-0" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary text-white w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Travel Guide End -->
+        <!-- Tour Booking End -->
 
-       
+        
         <!-- Testimonial Start -->
         <div class="container-fluid testimonial py-5">
             <div class="container py-5">
@@ -334,7 +377,7 @@
         </div>
         <!-- Subscribe End -->
 
-        <!-- Footer Start -->
+         <!-- Footer Start -->
   <div class="container-fluid footer py-5">
     <div class="container py-5">
         <div class="row g-5">
