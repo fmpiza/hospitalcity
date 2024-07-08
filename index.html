@@ -11,6 +11,37 @@
               font-weight: bold;
               font-family: sans-serif;
             }
+			<script>
+				// Get the video
+				var video = document.getElementById("myVideo");
+				// Get the button
+				var btn = document.getElementById("myBtn");
+				// Pause and play the video, and change the button text
+				function myFunction() {
+					if (video.paused) {
+						video.play();
+						btn.innerHTML = "Pause";
+					} else {
+						video.pause();
+						btn.innerHTML = "Play";
+					}
+				}
+				
+				@media(min-aspect-ratio: 16/9) {
+					video {
+						width: 30%;
+						height: auto;
+					}
+				}
+				@media(max-aspect-ratio: 16/9) {
+					video {
+						width: auto;
+						height: 30%;
+					}
+				}
+				
+				</script>
+				
           </style>
       
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -968,7 +999,15 @@
                     </div>
                     <div class="col-12">
                         <div class="text-center">
-                            <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="introduction.mp4"><i class="bi bi-play-circle"></i> <span>Watch Video</span></a>
+					<center>
+									<!-- The video -->
+									<video autoplay muted loop id="myVideo"  width="400" height="220">
+											<source src="introduction.mp4" type="video/mp4">
+										</video>
+									<!-- Optional: some overlay text to describe the video -->
+									
+									</center>
+                            
                         </div>
                     </div>
                 </div>
